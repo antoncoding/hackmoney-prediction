@@ -9,7 +9,7 @@ function DashBoard() {
   return (
     <Container>
       <Header primary="Prediction" />
-      <SectionTitle title="Predict the Market"/>
+      <SectionTitle title="Trading Volume Prediction"/>
 
       <Card />
     </Container>
