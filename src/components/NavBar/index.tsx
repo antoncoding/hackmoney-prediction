@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react'
-import { Bar, LinkBase, ContextMenu, ContextMenuItem } from '@aragon/ui'
+import React from 'react'
+import { Bar } from '@aragon/ui'
 import ConnectButton from './ConnectButton'
 
 

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const stateBeer = (defaultTitle, defaultSub, loadingTitle, loadingSub) => {
   return {
     default: {

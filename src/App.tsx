@@ -16,12 +16,11 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 function App() {
   const wallet = useConnection()
   const defaultTheme = getPreference('theme', 'light')
-  const [theme, setTheme] = useState(defaultTheme)
 
   return (
     <Router>
 
-      <Main layout={false} theme={theme}>
+      <Main layout={false} theme={useState(defaultTheme)}>
 
         <walletContext.Provider value={wallet}>
           <NavBar />
