@@ -32,12 +32,12 @@ function PredictCard() {
           <div style={{ color: theme.positive }}> {ethPrice.toString()}M </div>
         </Entry>
         <Entry>
-          <EntryTitle> Price Pool </EntryTitle>
+          <EntryTitle> Prize Pool </EntryTitle>
           <div> { game ? toTokenAmount(game.totalAmount, 18).toString() : 0 } </div>
         </Entry>
         <Entry>
-          <EntryTitle> Price Pool </EntryTitle>
-          <div> { game ? toTokenAmount(game.totalAmount, 18).toString() : 0 } </div>
+          <EntryTitle> End Block </EntryTitle>
+          <div> { game ? game.endBlock : 0 } </div>
         </Entry>
 
         <br />
