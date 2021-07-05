@@ -8,31 +8,17 @@ export type Token = {
   tags: string[]
 }
 
-export type Hodling = {
-  token: hToken
-  balance: string
-  shareBalance: string
-}
-
-export type Account = {
-  id: string
-  hodlings: Hodling[]
-}
-
-export type hToken = Token & {
-  token: string
-  creator: string
-  penalty: number
-  fee: number
-  expiry: number
-  lockWindow: number
-  createdAt: number
-  createdTx: string
-  tokenBalance: string
-  totalShares: string
-  totalFee: string
-  totalReward: string
-  n: number // decrease coefficient
-  bonusToken: string
-  bonusTokenBalance: string
+export type Game = {
+    epoch : string
+    startBlock : string
+    lockBlock : string
+    endBlock : string
+    totalAmount : string
+    bullAmount : string
+    bearAmount : string
+    rewardBaseCalAmount : string
+    rewardAmount : string
+    answer : string
+    oracleId : string
+    oracleCalled : boolean
 }
